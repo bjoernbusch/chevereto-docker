@@ -1,5 +1,6 @@
-FROM php:5-apache
-MAINTAINER furiousgeorge <furiousgeorgecode@gmail.com>
+FROM armhf/php:5.6-apache
+
+MAINTAINER Bjoern Busch <bjoern.busch@mailbox.org>
 
 ENV DEBIAN_FRONTEND noninteractive
 ENV LC_ALL C.UTF-8
