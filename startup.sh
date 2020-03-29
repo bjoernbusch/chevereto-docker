@@ -14,5 +14,8 @@ if [ ! -f $index ]; then
     chown www-data:www-data $index
 fi
 
+"$settings['session.save_path'] = '/tmp;'" >> /var/www/html/app/settings.php
+chown -R www-data:www-data /var/www/html/*
+
 echo "Starting Apache2 ($apache)"
 $apache
